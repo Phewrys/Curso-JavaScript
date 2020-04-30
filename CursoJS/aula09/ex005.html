@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body {
+            background: rgb(68, 125, 199);
+            color: white;
+            font: normal 18pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript.</p>
+    <div id="msg">Clique em mim</div>
+    <script>
+        // var p1 = document.getElementsByTagName('p')[1]
+        // window.document.write(p1.innerHTML) //innerText: só o texto. innerHTML: o texto com a formatação.
+        // p1.style.color = 'Red'
+
+        // var d = window.document.getElementById('msg')
+        // document.getElementById('msg').innerText = 'Olá'
+
+        // var e = window.document.getElementsByName('men')[0]
+        // e.style.color = 'Yellow'
+
+        // var f = window.document.getElementsByClassName('t')[2]
+        // f.style.color = 'Yellow'
+
+        var x = window.document.querySelector('div#msg') //# quando for id, . quando for class.
+        x.style.color = 'Red'
+        // var corpo = document.body
+        // corpo.style.background = 'Gray'
+    </script>
+</body>
+</html>
+<!--Ctrl + Shift + P , watch in chrome -->
+<!--
+    getElementsByTagName()
+
+
+
+
+-->

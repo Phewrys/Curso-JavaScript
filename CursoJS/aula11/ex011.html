@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NACIONALIDADE</title>
+</head>
+<body>
+    <h1>Desconbrindo a Nacionalidade</h1>
+    <input type="text" name="txtn" id="txtn">
+    <input type="button" value="Nascimento" onclick="nacionalidade()">
+    <div id="res">Resultado</div>
+
+    <script>
+        function nacionalidade() {
+            var n = document.querySelector('input#txtn')
+            var r = document.querySelector('div#res')
+            r.innerHTML = `Você nasceu em ${n.value}, então você é `
+            if(n.value == 'Brasil') {
+                r.innerHTML += `<strong>Brasileiro</strong>`
+            } else {
+                r.innerHTML += `<strong>Estrangeiro</strong>`
+            }
+        }
+    </script>
+</body>
+</html>
